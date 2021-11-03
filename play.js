@@ -1,7 +1,11 @@
-const connect = require("./client");
+const connect = require('./client'); //==> connect Function
+const setupInput = require('./input'); //==> setupInput function
 
 console.log("Connecting ...");
-connect();
+let conn = connect();
+setupInput(conn);
+
+
 
 /* // Client <------------
 // Chat app, where you can talk to me not using zoom, or slack 
